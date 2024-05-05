@@ -14,4 +14,10 @@ export default makeStyles((theme) => ({
     maxHeight: '150px',
     overflow: 'auto',
   },
+  listItemText: {
+    color: 'white',
+  },
+  listItem: {
+    color: 'white',
+  },
 }));

@@ -7,9 +7,24 @@ import useStyles from './styles'
 import { borders, textAlign } from '@material-ui/system';
 import Box from '@material-ui/core/Box'
 import { SpeechState, useSpeechContext } from '@speechly/react-client'
-import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider, createTheme } from '@material-ui/core/styles';
 
-const theme = createMuiTheme({
+const theme = createTheme({
+  overrides: {
+    MuiInputLabel: {
+      root: {
+        color: 'white',
+        "&$focused": {
+          color: 'white',
+        }
+      }
+    },
+    MuiInput: {
+      input: {
+        color: 'white',
+      }
+    }
+  },
   typography: {
     fontFamily: [
       'Ubuntu Mono',

@@ -3,6 +3,7 @@ import '../../assets/fonts/DejaVuSansMono.ttf';
 
 export default makeStyles((theme) => ({
   root: {
+    marginTop: '80px',
     backgroundColor: '#25282c',
     color: '#dde0e3',
     borderRadius: '15px',
@@ -36,17 +37,19 @@ export default makeStyles((theme) => ({
     height: '50px',
     lineHeight: '50px',
     position: 'relative',
-    marginTop: '0', // AppBar ile direkt bitişik olacak şekilde
+    marginTop: '0', 
     borderRadius: theme.shape.borderRadius,
   },
   marqueeContent: {
     position: 'absolute',
     whiteSpace: 'nowrap',
     animation: '$slide 20s linear infinite',
-    padding: theme.spacing(1), // İçeriğin daha düzgün görünmesi için padding eklendi
-  },
-  "@keyframes slide": {
-    "0%": { transform: 'translateX(100%)' },
-    "100%": { transform: 'translateX(-100%)' }
-  }
+    padding: theme.spacing(1),
+    minWidth: '200%', 
+},
+
+"@keyframes slide": {
+    "0%": { transform: 'translateX(0%)' },
+    "100%": { transform: 'translateX(-50%)' } 
+}
 }));

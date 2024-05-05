@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
-import { TextField, Typography, Grid, Button, FormControl, InputLabel, Select, MenuItem } from '@material-ui/core'
+import { TextField, Typography, Grid, Button, FormControl, InputLabel, Select, MenuItem} from '@material-ui/core'
 import { ExpenseTrackerContext } from '../../../context/context'
 import CustomizedSnackbar from '../../Snackbar/Snackbar'
 import { v4 as uid } from 'uuid'
@@ -106,9 +106,10 @@ const Form = () => {
             <Grid item xs={6}>
                 <TextField type="date" label="Tarih" fullWidth value={formData.date} onChange={(e) => setFormData({ ...formData, date: formatDate(e.target.value) })} />
             </Grid>
-            <Button className={classes.button} variant="outlined" onClick={createTransaction} color="secondary" fullWidth>
+            <Button className={classes.button} style={{marginBottom: '15px'}} variant="outlined" onClick={createTransaction} color="secondary" fullWidth>
                 Ekle
             </Button>
+           
         </Grid>
     )
 }
