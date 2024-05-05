@@ -4,7 +4,7 @@ import { PushToTalkButton, PushToTalkButtonContainer, ErrorPanel } from '@speech
 import Details from './components/Details/Details'
 import Main from './components/Main/Main'
 import useStyles from './styles'
-import { borders } from '@material-ui/system';
+import { borders, textAlign } from '@material-ui/system';
 import Box from '@material-ui/core/Box'
 import { SpeechState, useSpeechContext } from '@speechly/react-client'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
@@ -34,17 +34,17 @@ const App = () => {
       <Grid className={classes.grid} container spacing={0} alignItems="center" justify="center" style={{height: '100vh'}}>
         
           <Grid item xs={12} sm={4} style={{boxShadow: '10px 5px 5px gray', borderRadius: '15px'}} className={classes.mobile}>
-            <Details title="Income" />
+            <Details title="Gelir" />
           </Grid>
         
-        <Grid ref={main} item xs={12} sm={3} borderRadius="50%"  style={{boxShadow: '5px 5px 5px gray', borderRadius: '15px'}} className={classes.main}>
+        <Grid ref={main} item xs={12} sm={3} borderRadius="50%"  style={{ borderRadius: '15px'}} className={classes.main}>
          <Main />
         </Grid>
         <Grid item xs={12} sm={4} style={{boxShadow: '10px 5px 5px gray', borderRadius: '15px'}} className={classes.desktop}>
-            <Details title="Income" />
+            <Details title="Gelir" />
           </Grid>
         <Grid item xs={12} sm={4} borderRadius="50%"  style={{boxShadow: '10px 5px 5px gray', borderRadius: '15px'}} className={classes.last}>
-          <Details title="Expense"/>
+          <Details title="Gider"/>
         </Grid>
       </Grid>
       <PushToTalkButtonContainer>

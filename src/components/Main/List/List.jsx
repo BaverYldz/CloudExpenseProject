@@ -15,13 +15,13 @@ const List = () => {
         <MUIList dense={false} className={classes.list}>
             {transactions.map((transaction) => (
                 <Slide direction="down" in mountOnEnter unMountOnExit key={transaction.id}>
-                        <ListItem>
+                        <ListItem >
                             <ListItemAvatar>
                                 <Avatar className={transaction.type==="Income" ? classes.avatarIncome: classes.avatarExpense}>
                                     <MoneyOff />
                                 </Avatar>
                             </ListItemAvatar>
-                            <ListItemText primary={transaction.category} secondary={`TL ${transaction.amount} - ${transaction.date}`}/>
+                            <ListItemText style={{color: 'white'}} primary={transaction.category} secondary={`TL ${transaction.amount} - ${transaction.date}`}/>
                             <ListItemSecondaryAction>
                                 <IconButton edge="end" aria-label="delete" onClick={() => deleteTransaction(transaction.id)}>
                                     <Delete />

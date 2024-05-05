@@ -6,6 +6,7 @@ export default makeStyles((theme) => ({
     backgroundColor: '#25282c',
     color: '#dde0e3',
     borderRadius: '15px',
+    flexGrow: 1,
   },
   media: {
     height: 0,
@@ -35,13 +36,14 @@ export default makeStyles((theme) => ({
     height: '50px',
     lineHeight: '50px',
     position: 'relative',
-    marginTop: theme.spacing(2),
+    marginTop: '0', // AppBar ile direkt bitişik olacak şekilde
     borderRadius: theme.shape.borderRadius,
   },
   marqueeContent: {
     position: 'absolute',
     whiteSpace: 'nowrap',
-    animation: '$slide 10s linear infinite',
+    animation: '$slide 20s linear infinite',
+    padding: theme.spacing(1), // İçeriğin daha düzgün görünmesi için padding eklendi
   },
   "@keyframes slide": {
     "0%": { transform: 'translateX(100%)' },

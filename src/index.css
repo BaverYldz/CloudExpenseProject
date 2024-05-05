@@ -7,7 +7,7 @@
   src : local("DejaVuSansMono"), url("./assets/fonts/DejaVuSansMono.ttf") format("truetype");
 }
 body, html, #root {
-  background-color: #151618;
+  background-color: #1d2129;
   font-family: "DejaVuSansMono";
   /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/bg.png);*/
   background-size: cover;

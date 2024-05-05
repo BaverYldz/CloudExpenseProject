@@ -25,8 +25,8 @@ export const expenseCategories = [
   { type: 'Eğlence', amount: 0, color: expenseColors[7] },
   { type: 'Telefon', amount: 0, color: expenseColors[8] },
   { type: 'Evcil Hayvanlar', amount: 0, color: expenseColors[9] },
-  { type: 'Diğer', amount: 0, color: expenseColors[10] },
   { type: 'Borsa Giderleri', amount: 0, color: expenseColors[11] },
+  { type: 'Diğer', amount: 0, color: expenseColors[10] },
 ];
 
 export const resetCategories = () => {

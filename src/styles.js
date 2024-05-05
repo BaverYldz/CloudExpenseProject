@@ -26,5 +26,11 @@ export default makeStyles((theme) => ({
     '& > *': {
       margin: theme.spacing(2),
     },
-  },
+  },  detailContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%', 
+    padding: theme.spacing(2) 
+  }
 }));
